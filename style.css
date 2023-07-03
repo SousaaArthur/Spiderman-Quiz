@@ -150,3 +150,15 @@ i{
 i:hover{
     color: #3a5694;
 }
+
+@media (max-width: 768px){
+    body{
+        background-position: right top;
+    }
+}
+
+@media (max-width: 320px){
+    body{
+        background-position: right top;
+    }
+}
