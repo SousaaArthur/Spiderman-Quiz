@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+:root{
+    --color-primary: #fafafa; 
+    --color-erro: #ff000094;
+    --background-btn-hover: #fafafa;
+    --color-text-btn: #000;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+    background-image: url(../../imgs/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
+.question h1{
+    color: #fafafa;
+}
+
+.question h3{
+    color: #dddcdc;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.response-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1.5rem;
+}
+
+.btn{
+    height: 2.5rem;
+    width: 12rem;
+    color: #fafafa;
+    background-color: transparent;
+    border: 2px solid var(--color-primary);
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn:hover{
+    background-color: var(--background-btn-hover);
+    color: var(--color-text-btn);
+    transform: scale(1.1);
+}
+
+.next-btn{
+    border: none;
+    height: 2.5rem;
+    width: 12rem;
+    color: #fafafab0;
+    background-color: #3a5694c2;
+    border-radius: 7px;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.activated{
+    color: #fafafa;
+    background-color: #3a5694;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.activated:hover{
+    background-color: #fafafa;
+    color: #3a5694;
+}
+
+.correct{
+    border: 2px solid #53fd5bbb;
+    color: #fafafa;
+    background-color: #53fd5bbb;
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.correct:hover{
+    background-color: #53fd5bbb;
+}
+
+.wrong{
+    border: 2px solid #ff0000bb;
+    color: #fafafa;
+    background-color: #ff0000bb;
+    transform: scale(1.1);
+}
+
+.wrong:hover{
+    background-color: #ff0000bb;
+}
+
+.page-counter{
+    margin: 1.5rem;
+}
+
+.page-counter p{
+    color: #fafafa;
+}
+
+.text-points{
+    color: #fafafa;
+    margin: 1.5rem;
+}
+
+.footer{
+    margin: 1rem;
+}
+
+.footer p{
+    margin: 0.7rem;
+    color: #fafafa;
+}
+
+.icons{
+    margin: 0.2rem;
+}
+
+i{
+    color: #fafafa;
+    cursor: pointer;
+    transition: .5s;
+    margin: 0.3rem;
+}
+
+i:hover{
+    color: #3a5694;
+}
